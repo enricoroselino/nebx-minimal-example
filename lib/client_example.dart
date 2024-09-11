@@ -129,8 +129,7 @@ class _ClientExampleState extends State<ClientExample> {
           ElevatedButton(
             onPressed: () async {
               /// try swapping the client between normalClient and jwtClient
-              /// also try wait for 2 minutes to see auto refresh token
-              /// when facing unauthorized status code
+              /// also try wait the token expired to see auto refresh token functionality when facing unauthorized status code
               await fetchUserData(jwtClient);
             },
             child: const Text("Fetch user data"),
