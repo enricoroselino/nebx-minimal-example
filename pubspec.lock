@@ -259,10 +259,11 @@ packages:
   nebx:
     dependency: "direct main"
     description:
-      path: "D:\\nebx-flutter-development\\nebx-flutter"
-      relative: false
-    source: path
-    version: "0.1.8"
+      name: nebx
+      sha256: "0f2781a847d52f946a3d7e5d6f2bdb4755b2123d344b70a0a66e53fe84db90b1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.9"
   nebx_verdict:
     dependency: "direct main"
     description:
