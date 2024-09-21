@@ -10,7 +10,7 @@ class TokenResponse {
 
   factory TokenResponse.fromJson(Map<String, dynamic> jsonObject) {
     return TokenResponse._(
-      accessToken: jsonObject["token"],
+      accessToken: jsonObject["accessToken"],
       refreshToken: jsonObject["refreshToken"],
     );
   }
