@@ -260,10 +260,10 @@ packages:
     dependency: "direct main"
     description:
       name: nebx
-      sha256: c9e00d80c54501a7c1ab413263a45754b9bd20a7e550b367647f3887c6c97490
+      sha256: "776dffbabf6a007154ac3356e1b3d805b23681d08b506b1d095a0464d9187f91"
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.12"
+    version: "0.1.13"
   nebx_verdict:
     dependency: "direct main"
     description:

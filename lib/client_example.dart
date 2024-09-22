@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:nebx/nebx.dart';
-import 'package:nebx_verdict/nebx_verdict.dart';
 
 class TokenResponse {
   String accessToken;
@@ -20,7 +19,7 @@ var accessToken = "";
 var refreshToken = "";
 const int expiringMins = 1;
 
-String accessTokenLoader() {
+Future<String> accessTokenLoader() async {
   print("access token loaded: $accessToken");
   return accessToken;
 }
