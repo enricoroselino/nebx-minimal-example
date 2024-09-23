@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:nebx_minimal_example/persistence/dummy_repository.dart';
-import 'package:nebx_minimal_example/services.dart';
 
 class ClientExample extends StatefulWidget {
   const ClientExample({super.key});
@@ -11,7 +11,7 @@ class ClientExample extends StatefulWidget {
 
 class _ClientExampleState extends State<ClientExample> {
   // try to change the http client injection at service.dart
-  final dummyRepo = getIt<IDummyRepository>();
+  final dummyRepo = GetIt.I<IDummyRepository>();
 
   @override
   Widget build(BuildContext context) {

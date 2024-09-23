@@ -4,9 +4,8 @@ import 'package:nebx_minimal_example/persistence/auth_handler.dart';
 import 'package:nebx_minimal_example/persistence/dummy_repository.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-final GetIt getIt = GetIt.instance;
-
 void initServices() {
+  final getIt = GetIt.I;
   final storage = SharedPreferencesAsync();
 
   const baseUrl = "https://dummyjson.com/";
@@ -32,5 +31,6 @@ void initServices() {
     client: getIt<IDioClient>(),
     sharedPref: storage,
   );
+
   getIt.registerFactory<IDummyRepository>(() => dummyRepo);
 }

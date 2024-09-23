@@ -1,6 +1,6 @@
+import 'package:get_it/get_it.dart';
 import 'package:nebx/nebx.dart';
 import 'package:nebx_minimal_example/models/token_response_model.dart';
-import 'package:nebx_minimal_example/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthHandler {
@@ -11,7 +11,7 @@ class AuthHandler {
   static const expiringMinutes = 1;
 
   static final SharedPreferencesAsync _storage =
-      getIt<SharedPreferencesAsync>();
+      GetIt.I<SharedPreferencesAsync>();
 
   static Future<String> loadAccessToken() async {
     return await _storage.getString(accessTokenStorageKey) ?? "";
