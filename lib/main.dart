@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nebx_minimal_example/client_example.dart';
+import 'package:nebx_minimal_example/services.dart';
 
 void main() {
+  initServices();
   runApp(const MyApp());
 }
 
