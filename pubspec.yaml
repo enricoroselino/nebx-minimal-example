@@ -35,6 +35,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   nebx_verdict: ^0.1.2
   nebx: ^0.1.13
+  shared_preferences: ^2.3.2
+  get_it: ^8.0.0
 
 dev_dependencies:
   flutter_test:
